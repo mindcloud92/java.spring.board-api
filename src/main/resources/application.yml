@@ -1,0 +1,18 @@
+server:
+  port: 80
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    # jdbc를 통해 h2 db를 mem driver로 sample schema에 접속해라
+    url: jdbc:h2:mem:sample
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /sample
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create

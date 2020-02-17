@@ -1,6 +1,6 @@
-package kr.co.mz.sample.boardapi.repository;
+package com.sample.springboot.boardapi.repository;
 
-import kr.co.mz.sample.boardapi.domain.Board;
+import com.sample.springboot.boardapi.domain.Board;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

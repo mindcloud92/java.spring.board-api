@@ -1,7 +1,7 @@
-package kr.co.mz.sample.boardapi.controller;
+package com.sample.springboot.boardapi.controller;
 
-import kr.co.mz.sample.boardapi.domain.Board;
-import kr.co.mz.sample.boardapi.service.BoardService;
+import com.sample.springboot.boardapi.service.BoardService;
+import com.sample.springboot.boardapi.domain.Board;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;

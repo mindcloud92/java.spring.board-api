@@ -1,4 +1,4 @@
-package kr.co.mz.sample.boardapi.config;
+package com.sample.springboot.boardapi.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

@@ -1,16 +1,16 @@
-package kr.co.mz.sample.boardapi.repository.impl;
+package com.sample.springboot.boardapi.repository.impl;
 
-import kr.co.mz.sample.boardapi.domain.Board;
-import kr.co.mz.sample.boardapi.domain.QBoard;
-import kr.co.mz.sample.boardapi.repository.BoardQueryDslRepository;
+import com.sample.springboot.boardapi.domain.Board;
+import com.sample.springboot.boardapi.repository.BoardQueryDslRepository;
+import java.util.List;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 import org.springframework.stereotype.Repository;
-
-import java.util.List;
+import com.sample.springboot.boardapi.domain.QBoard;
 
 @Repository
-public class BoardQueryDslRepositoryImpl extends QuerydslRepositorySupport implements BoardQueryDslRepository {
+public class BoardQueryDslRepositoryImpl extends QuerydslRepositorySupport implements
+    BoardQueryDslRepository {
 
     public BoardQueryDslRepositoryImpl() {
         super(Board.class);

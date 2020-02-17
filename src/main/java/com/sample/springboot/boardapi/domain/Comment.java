@@ -1,4 +1,4 @@
-package kr.co.mz.sample.boardapi.domain;
+package com.sample.springboot.boardapi.domain;
 
 import lombok.Getter;
 import lombok.Setter;

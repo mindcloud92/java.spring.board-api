@@ -1,4 +1,4 @@
-package kr.co.mz.sample.boardapi;
+package com.sample.springboot.boardapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

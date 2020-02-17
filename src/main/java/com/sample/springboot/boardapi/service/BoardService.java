@@ -1,7 +1,7 @@
-package kr.co.mz.sample.boardapi.service;
+package com.sample.springboot.boardapi.service;
 
 import java.util.List;
-import kr.co.mz.sample.boardapi.domain.Board;
+import com.sample.springboot.boardapi.domain.Board;
 import org.springframework.data.domain.Pageable;
 
 public interface BoardService {

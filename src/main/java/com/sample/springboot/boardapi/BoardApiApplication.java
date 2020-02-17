@@ -1,4 +1,4 @@
-package kr.co.mz.sample.boardapi;
+package com.sample.springboot.boardapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

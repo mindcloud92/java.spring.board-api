@@ -1,8 +1,8 @@
-package kr.co.mz.sample.boardapi.service.impl;
+package com.sample.springboot.boardapi.service.impl;
 
-import kr.co.mz.sample.boardapi.domain.Board;
-import kr.co.mz.sample.boardapi.repository.BoardRepository;
-import kr.co.mz.sample.boardapi.service.BoardService;
+import com.sample.springboot.boardapi.domain.Board;
+import com.sample.springboot.boardapi.repository.BoardRepository;
+import com.sample.springboot.boardapi.service.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;

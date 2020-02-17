@@ -1,16 +1,18 @@
-package com.sample.springboot.boardapi.repository.impl;
+package io.cloudrium.sample.board.api.repository.impl;
 
-import com.sample.springboot.boardapi.domain.Board;
-import com.sample.springboot.boardapi.repository.BoardQueryDslRepository;
+import io.cloudrium.sample.board.api.repository.BoardQueryDslRepository;
+import io.cloudrium.sample.board.api.domain.Board;
+
 import java.util.List;
+
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 import org.springframework.stereotype.Repository;
-import com.sample.springboot.boardapi.domain.QBoard;
+import io.cloudrium.sample.board.api.domain.QBoard;
 
 @Repository
 public class BoardQueryDslRepositoryImpl extends QuerydslRepositorySupport implements
-    BoardQueryDslRepository {
+        BoardQueryDslRepository {
 
     public BoardQueryDslRepositoryImpl() {
         super(Board.class);

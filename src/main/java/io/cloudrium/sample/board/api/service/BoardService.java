@@ -1,7 +1,7 @@
-package com.sample.springboot.boardapi.service;
+package io.cloudrium.sample.board.api.service;
 
 import java.util.List;
-import com.sample.springboot.boardapi.domain.Board;
+import io.cloudrium.sample.board.api.domain.Board;
 import org.springframework.data.domain.Pageable;
 
 public interface BoardService {

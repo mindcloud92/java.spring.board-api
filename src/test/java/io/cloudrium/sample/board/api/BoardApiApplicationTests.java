@@ -1,4 +1,4 @@
-package com.sample.springboot.boardapi;
+package io.cloudrium.sample.board.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

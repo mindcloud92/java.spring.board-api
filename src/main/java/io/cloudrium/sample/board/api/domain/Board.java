@@ -1,4 +1,4 @@
-package com.sample.springboot.boardapi.domain;
+package io.cloudrium.sample.board.api.domain;
 
 import lombok.Getter;
 import lombok.Setter;

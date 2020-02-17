@@ -1,4 +1,4 @@
-package com.sample.springboot.boardapi;
+package io.cloudrium.sample.board.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

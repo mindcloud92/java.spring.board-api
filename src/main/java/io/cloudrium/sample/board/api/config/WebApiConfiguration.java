@@ -7,10 +7,12 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class WebApiConfiguration implements WebMvcConfigurer {
 
+    private final String LOCAL_BOARD_WEB_ORIGIN = "http://localhost:8080";
+
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("*")
+                .allowedOrigins(LOCAL_BOARD_WEB_ORIGIN)
                 .allowedHeaders("*")
                 .allowedMethods("*");
 

@@ -1,14 +1,14 @@
-package io.cloudrium.sample.board.api.repository.impl;
+package io.cloudrium.sample.board.api.infrastructure.repository.impl;
 
-import io.cloudrium.sample.board.api.repository.BoardQueryDslRepository;
-import io.cloudrium.sample.board.api.domain.Board;
+import io.cloudrium.sample.board.api.infrastructure.data.QBoard;
+import io.cloudrium.sample.board.api.infrastructure.repository.BoardQueryDslRepository;
+import io.cloudrium.sample.board.api.infrastructure.data.Board;
 
 import java.util.List;
 
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 import org.springframework.stereotype.Repository;
-import io.cloudrium.sample.board.api.domain.QBoard;
 
 @Repository
 public class BoardQueryDslRepositoryImpl extends QuerydslRepositorySupport implements
@@ -25,6 +25,9 @@ public class BoardQueryDslRepositoryImpl extends QuerydslRepositorySupport imple
         return from(board)
                 .where(board.title.contains(q))
                 .orderBy(board.createdAt.desc())
+                // ToDO: improvement target
+                .offset(pageable.getPageNumber() * (pageable.getPageSize() - 1))
+                .limit(pageable.getPageSize())
                 .fetch();
     }
 }

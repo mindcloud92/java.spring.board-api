@@ -1,14 +1,12 @@
-package io.cloudrium.sample.board.api.domain;
+package io.cloudrium.sample.board.api.infrastructure.data;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.util.Date;
 
+@Data
 @Entity
-@Getter
-@Setter
 public class Comment {
 
     @Id

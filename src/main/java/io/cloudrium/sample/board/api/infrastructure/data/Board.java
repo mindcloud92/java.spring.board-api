@@ -1,16 +1,14 @@
-package io.cloudrium.sample.board.api.domain;
+package io.cloudrium.sample.board.api.infrastructure.data;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.Date;
 
 
+@Data
 @Entity
-@Getter
-@Setter
 public class Board  {
 
     @Id
@@ -24,7 +22,7 @@ public class Board  {
     private String contents;
 
     @Column(nullable = false)
-    private Date createdAt = new Date(); // ToDO : auditing
+    private Date createdAt = new Date();
 
     @JoinColumn
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)

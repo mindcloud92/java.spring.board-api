@@ -9,7 +9,7 @@
 #### Start with Gradle Project
 1) create gradle project  
 
-2) modify build.gradle  
+2) change build.gradle  
     - define spring boot plugin & spring boot starter web dependency
         ```gradle
       // build.gradle

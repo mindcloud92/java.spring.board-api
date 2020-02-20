@@ -92,9 +92,8 @@
 
 #### Start with SpringInitializr
 1) Spring intializr(https://start.spring.io)에 들어가 아래와 같이 설정된 프로젝트 다운로드
-
-    Project | Gradle Project
-    :------- | :--------------
+    
+    Project  | Gradle Project
     Language | Java
     Spring Boot | 2.2.4
     Dependencies | Spring Web

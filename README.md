@@ -3,12 +3,12 @@
 <br/>
 
 
-* [Start with SpringIntializr](#start-with-springintializr)
+* [Start with SpringInitializr](#start-with-springintializr)
 * [Start width Gradle Project](#start-with-gradle-project)
 <br/>
 <br/>
 
-#### * Start width Gradle Project
+#### * Start with SpringInitializr
 
 1) Spring intializr(https://start.spring.io)에 들어가 아래 세팅으로 프로젝트 다운로드
 

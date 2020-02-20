@@ -3,8 +3,8 @@
 <br/>
 
 
-* [Start with SpringIntializr](#user-content-start-with-springintializr)
-* [Start width Gradle Project](#user-content-start-with-gradle-project)
+* [Start with SpringIntializr](#user-content--start-with-springintializr)
+* [Start width Gradle Project](#user-content--start-with-gradle-project)
 <br/>
 <br/>
 
@@ -24,7 +24,7 @@ Dependencies | Spring Web
 
 
 
-#### * Start width Gradle Project
+#### [Start width Gradle Project]{#test}
 
 2) 
 1) create gradle project  

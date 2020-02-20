@@ -53,7 +53,7 @@
    }
     ```
    
-    - Optional) set up server port to application.yml
+    optional> set up server port to application.yml
     ```yaml
    # application.yml
    

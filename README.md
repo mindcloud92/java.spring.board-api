@@ -1,7 +1,7 @@
 # #1. Rest api with spring boot
 
 0. create gradle project
-
+<br/>
 0. modify build.gradle   
     - add spring boot plugin & spring boot starter web dependency
         ```gradle
@@ -25,15 +25,12 @@
     
 0. src에 package 추가
 <br/>
-
 0. add application class & write code 
     - Optional) set up *resources/application.yml* server port 
-<br/>
-    
+<br/>    
 0. add controller package & BoardController class  
     - write api<br/>
         ex> GET /boards
-<br/>
-    
+<br/>    
 0. Run application 
     - call GET /boards api 

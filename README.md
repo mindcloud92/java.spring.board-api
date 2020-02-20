@@ -35,7 +35,7 @@
     
 3) add application class & write code        
     ```java
-   // Application.class
+   // Application.java
    
    package io.cloudrium.sample.board.api;
    
@@ -61,7 +61,7 @@
    
 4) add controller package & BoardController class
     ```java
-   // BoardController.class
+   // BoardController.java
    
     package io.cloudrium.sample.board.api.controller;
     

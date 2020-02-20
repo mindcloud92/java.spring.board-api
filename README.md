@@ -2,7 +2,7 @@
 
 <br/>
 
-> **_Required Knowledge:_**  JPA(ORM) + Lombok(lib) + H2 DB
+> **_Used:_**  JPA(ORM) + Lombok(lib) + H2 DB
 
 <br/>
 

@@ -24,7 +24,7 @@ Dependencies | Spring Web
 
 
 
-#### [Start width Gradle Project]{#test}
+#### [Start width Gradle Project]{#~test}
 
 2) 
 1) create gradle project  

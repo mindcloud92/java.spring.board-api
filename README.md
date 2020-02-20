@@ -3,12 +3,12 @@
 <br/>
 
 
-* [Start with SpringIntializr](#start-with-spring-intializr)
-* [Gradle Project로 시작](#start-with-gradle)
+* [Start with SpringIntializr](#user-content-start-with-springintializr)
+* [Start width Gradle Project](#user-content-start-with-gradle-project)
 <br/>
 <br/>
 
-#### Start with SpringIntializr
+#### * Start width Gradle Project
 
 1) Spring intializr(https://start.spring.io)에 들어가 아래 세팅으로 프로젝트 다운로드
 
@@ -24,7 +24,7 @@ Dependencies | Spring Web
 
 
 
-#### 2. Gradle Project로 시작
+#### * Start width Gradle Project
 
 2) 
 1) create gradle project  

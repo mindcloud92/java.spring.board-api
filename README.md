@@ -93,6 +93,7 @@
 #### Start with SpringInitializr  
 
 * 해당방법으로 JPA API Application을 구현할 경우 feature1은 skip 가능(Go to [feature2](https://github.com/mindcloud92/sample-board-api/tree/feature/step2.implement_CRUD#start-with-springInitializr))  
+<br/>
 
 1) Spring intializr(https://start.spring.io) 웹 사이트에서 아래와 같이 설정된 프로젝트 다운로드
     

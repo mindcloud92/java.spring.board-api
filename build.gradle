@@ -1,61 +1,20 @@
 plugins {
-	id 'org.springframework.boot' version '2.2.4.RELEASE'
-	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
-	id 'java'
-	id 'com.ewerk.gradle.plugins.querydsl' version '1.0.10'
+    id 'org.springframework.boot' version '2.2.4.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'java'
 }
 
-group = 'io.clou'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
+group 'io.cloudrium.sample.board'
+version '1.0-SNAPSHOT'
 
-configurations {
-	developmentOnly
-	querydsl.extendsFrom compileClasspath
-	runtimeClasspath {
-		extendsFrom developmentOnly
-	}
-}
+sourceCompatibility = 1.8
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-	compile 'com.querydsl:querydsl-jpa'
-	compile 'com.querydsl:querydsl-apt'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
 
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	runtimeOnly 'com.h2database:h2'
-	compileOnly 'org.projectlombok:lombok:1.18.6'
-	annotationProcessor 'org.projectlombok:lombok:1.18.6'
-
-	testImplementation('org.springframework.boot:spring-boot-starter-test') {
-		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-	}
-}
-
-def querydslPackageName = 'src/main/generated'
-querydsl {
-	library = "com.querydsl:querydsl-apt"
-	jpa = true
-	querydslSourcesDir = querydslPackageName
-}
-
-compileQuerydsl{
-	options.annotationProcessorPath = configurations.querydsl
-}
-
-sourceSets {
-	main {
-		java {
-			srcDirs = ['src/main/java', querydslPackageName]
-		}
-	}
-}
-
-test {
-	useJUnitPlatform()
+    testCompile group: 'junit', name: 'junit', version: '4.12'
 }

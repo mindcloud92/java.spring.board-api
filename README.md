@@ -2,9 +2,14 @@
 <br/>
 <br/>
 
-<details>
-<summary>Spring initializr로 시작</summary>
-<div markdown="1">
+
+* [Spring initializr로 시작](#start-with-spring-initialzr)
+* [Gradle Project로 시작](#start-with-gradle)
+<br/>
+<br/>
+
+
+
 1) Spring intializr(https://start.spring.io)에 들어가 아래 세팅으로 프로젝트 다운로드
 
 Project | Gradle Project
@@ -14,8 +19,7 @@ Spring Boot | 2.2.4
 Dependencies | Spring Web
 
 2) 
-</div>
-</details>
+
 <br/>
 
 

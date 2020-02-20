@@ -30,7 +30,7 @@
         ```gradle
       // build.gradle
       
-        group 'group'
+        group '${my group}'
         ```    
     
 3) add application class & write code        

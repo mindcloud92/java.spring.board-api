@@ -1,7 +1,7 @@
 # #0. Rest api with spring boot
 <br/>
 
-* [Start width Gradle Project](#start-with-gradle-project)
+* [Start with Gradle Project](#start-with-gradle-project)
 * [Start with SpringInitializr](#start-with-springInitializr)
   
 <br/>

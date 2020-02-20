@@ -8,7 +8,7 @@
 <br/>
 <br/>
 
-#### Spring initializr로 시작 {#start-with-spring-initialzr}
+#### Spring initializr로 시작
 
 1) Spring intializr(https://start.spring.io)에 들어가 아래 세팅으로 프로젝트 다운로드
 

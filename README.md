@@ -3,12 +3,12 @@
 <br/>
 
 
-* [Spring initializr로 시작](#start-with-spring-initialzr)
+* [Start with SpringIntializr](#start-with-spring-intializr)
 * [Gradle Project로 시작](#start-with-gradle)
 <br/>
 <br/>
 
-#### Spring initializr로 시작
+#### Start with SpringIntializr
 
 1) Spring intializr(https://start.spring.io)에 들어가 아래 세팅으로 프로젝트 다운로드
 

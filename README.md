@@ -3,7 +3,7 @@
 <br/>
 <br/>
 
-> spring initialzr(https://start.spring.io/)로 다운받을 경우의 설정은 아래와 같다.  
+> spring initialzr(https://start.spring.io)로 다운받을 경우의 설정은 아래와 같다.  
 
 Project | Gradle Project
 :------- | :--------------

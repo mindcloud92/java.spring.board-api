@@ -1,9 +1,11 @@
-# #0. Rest api with spring boot(gradle project)
-
+# #0. Rest api with spring boot
 <br/>
 <br/>
 
-> spring initialzr(https://start.spring.io)로 다운받을 경우의 설정은 아래와 같다.  
+<details>
+<summary>Spring initializr로 시작</summary>
+<div markdown="1">
+1) Spring intializr(https://start.spring.io)에 들어가 아래 세팅으로 프로젝트 다운로드
 
 Project | Gradle Project
 :------- | :--------------
@@ -11,8 +13,16 @@ Language | Java
 Spring Boot | 2.2.4
 Dependencies | Spring Web
 
+2) 
+</div>
+</details>
 <br/>
 
+
+
+#### 2. Gradle Project로 시작
+
+2) 
 1) create gradle project  
 
 2) modify build.gradle  

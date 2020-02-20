@@ -102,4 +102,4 @@
 
 <br/>
 
-* ref. 이후 과정은 __[Start with Gradle Project](#start-with-gradle-project)__의 5,6,7 참고
+* ref. 이후 과정은 [Start with Gradle Project](#start-with-gradle-project)의 5,6,7 참고

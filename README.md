@@ -58,7 +58,7 @@
    # application.yml
    
    server:
-       port: 80
+       port: ${my port}
     ```  
    
 4) add controller package & BoardController class

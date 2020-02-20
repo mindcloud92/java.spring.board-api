@@ -87,6 +87,8 @@
 5) Run application
     - call GET /boards api 
 
+<br/>
+<br/>
 
 #### Start with SpringInitializr
 1) Spring intializr(https://start.spring.io)에 들어가 아래와 같이 설정된 프로젝트 다운로드

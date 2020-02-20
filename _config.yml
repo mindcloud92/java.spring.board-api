@@ -1,0 +1,3 @@
+# Jekyll configuration
+markdown: kramdown
+auto_ids: false

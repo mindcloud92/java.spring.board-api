@@ -1,32 +1,12 @@
 # #0. Rest api with spring boot
 <br/>
-<br/>
 
-
-* [Start with SpringInitializr](#start-with-springInitializr)
 * [Start width Gradle Project](#start-with-gradle-project)
+* [Start with SpringInitializr](#start-with-springInitializr)
+  
 <br/>
-<br/>
-
-#### Start with SpringInitializr
-
-1) Spring intializr(https://start.spring.io)에 들어가 아래 세팅으로 프로젝트 다운로드
-
-Project | Gradle Project
-:------- | :--------------
-Language | Java
-Spring Boot | 2.2.4
-Dependencies | Spring Web
-
-2) 
-
-<br/>
-
-
 
 #### Start with Gradle Project
-
-2) 
 1) create gradle project  
 
 2) modify build.gradle  
@@ -81,7 +61,42 @@ Dependencies | Spring Web
        port: 80
     ```  
    
-4) add controller package & BoardController class          
+4) add controller package & BoardController class
+    ```java
+   // BoardController.class
+   
+    package io.cloudrium.sample.board.api.controller;
+    
+    import org.springframework.http.ResponseEntity;
+    import org.springframework.web.bind.annotation.GetMapping;
+    import org.springframework.web.bind.annotation.RequestMapping;
+    import org.springframework.web.bind.annotation.RestController;
+    
+    @RestController
+    @RequestMapping("/boards")
+    public class BoardController {
+    
+        @GetMapping
+        public ResponseEntity get() {
+            return ResponseEntity.ok("test!");
+        }
+    
+    }
+    ```          
         
 5) Run application
     - call GET /boards api 
+
+
+#### Start with SpringInitializr
+1) Spring intializr(https://start.spring.io)에 들어가 아래와 같이 설정된 프로젝트 다운로드
+
+    Project | Gradle Project
+    :------- | :--------------
+    Language | Java
+    Spring Boot | 2.2.4
+    Dependencies | Spring Web
+
+<br/>
+
+* ref. 이후 과정은 __[Start with Gradle Project](#start-with-gradle-project)__의 5,6,7 참고

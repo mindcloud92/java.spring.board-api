@@ -59,7 +59,7 @@
        port: ${my port}
     ```  
    
-4) add controller package & BoardController class
+4) add controller package & class
     ```java
    // BoardController.java
    

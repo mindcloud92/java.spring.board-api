@@ -59,16 +59,16 @@
             }
             ```
 
-        optional> set up jpa additional option to application.yml        
-        ```yaml
-        // application.yml      
-    
-        spring:
-            jpa:
-                hibernate:
-                    ddl-auto: create
-                show-sql: true
-        ```
+        optional> set up jpa additional option to application.yml       
+            ```yaml
+            // application.yml      
+        
+            spring:
+                jpa:
+                    hibernate:
+                        ddl-auto: create
+                    show-sql: true
+            ```
         
 3) add entity
     - add infrastructure.data package & Board class

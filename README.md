@@ -60,9 +60,10 @@
             ```
 
         optional> set up jpa additional option to application.yml
+        
             ```yaml
             // application.yml      
-      
+        
             spring:
                 jpa:
                     hibernate:

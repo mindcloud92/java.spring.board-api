@@ -50,70 +50,70 @@
 2) set up JPA
     - change build.gradle
         - define dependency  
-        ```gradle
-        // build.gradle
-        
-        dependencies {
-            implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-            ...
-        }
-        ```
+            ```gradle
+            // build.gradle
+            
+            dependencies {
+                implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+                ...
+            }
+            ```
 
         optional> set up jpa additional option to application.yml
-        ```yaml
-        // application.yml      
-  
-        spring:
-            jpa:
-                hibernate:
-                    ddl-auto: create
-                show-sql: true
-        ```
+            ```yaml
+            // application.yml      
+      
+            spring:
+                jpa:
+                    hibernate:
+                        ddl-auto: create
+                    show-sql: true
+            ```
         
 3) add entity
     - add infrastructure.data package & Board class
-    ```java
-   // Board.java
-   
-    package io.cloudrium.sample.board.api.infrastructure.data;
-    
-   // imports dependencies...
-    
-    @Entity
-    public class Board {
-    
-        @Id
-        @GeneratedValue
-        private Long id;
-    
-        @Column(nullable = false)
-        private String title;
-    
-        @Lob
-        @Column(nullable = false)
-        private String contents;
-    
-        @CreationTimestamp
-        @Column(nullable = false)
-        private LocalDateTime createdAt;
-    
-        // getter, setter
-    }   
-    ```
+        ```java
+       // Board.java
+       
+        package io.cloudrium.sample.board.api.infrastructure.data;
+        
+       // imports dependencies...
+        
+        @Entity
+        public class Board {
+        
+            @Id
+            @GeneratedValue
+            private Long id;
+        
+            @Column(nullable = false)
+            private String title;
+        
+            @Lob
+            @Column(nullable = false)
+            private String contents;
+        
+            @CreationTimestamp
+            @Column(nullable = false)
+            private LocalDateTime createdAt;
+        
+            // getter, setter
+        }   
+        ```
    
    optional> [apply lombok](#apendix-lombok-library)
           
    
 4) add respository
     - add infrastructure.repository package & BoardRepository interface
-    ```java
-    package io.cloudrium.sample.board.api.infrastructure.repository;
-    
-    // imports dependencies...
-    
-    public interface BoardRepository extends JpaRepository<Board, Long> {
-    }
-    ```
+        ```java
+        package io.cloudrium.sample.board.api.infrastructure.repository;
+        
+        // imports dependencies...
+        
+        public interface BoardRepository extends JpaRepository<Board, Long> {
+        }
+        ```
    
 5) write CRUD logic to Controller
     ```java
@@ -191,56 +191,56 @@
 - How to use?
     1. change build.gradle
         - define dependency & configuration
-        ```gradle
-       // build.gradle
-       
-       dependencies {
-            compileOnly 'org.projectlombok:lombok'
-            annotationProcessor 'org.projectlombok:lombok'
-            ...
-       }
-       
-       configurations {
-          compileOnly {
-              extendsFrom annotationProcessor
-          }
-        }
-       ```
+            ```gradle
+           // build.gradle
+           
+           dependencies {
+                compileOnly 'org.projectlombok:lombok'
+                annotationProcessor 'org.projectlombok:lombok'
+                ...
+           }
+           
+           configurations {
+              compileOnly {
+                  extendsFrom annotationProcessor
+              }
+            }
+           ```
        
     2. change board(entity)
-    ```java
-    // Board.java
-  
-    package io.cloudrium.sample.board.api.infrastructure.data;
-    
-    // imports dependencies...
-    
-    @Entity
-    @Getter
-    @Setter
-    @NoArgsConstructor(access = AccessLevel.PROTECTED)
-    public class Board {
-    
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private Long id;
-    
-        @Column(nullable = false)
-        private String title;
-    
-        @Lob
-        @Column(nullable = false)
-        private String contents;
-    
-        @CreationTimestamp
-        @Column(nullable = false)
-        private LocalDateTime createdAt;
-    
-        @Builder
-        public Board(String title, String contents) {
-            this.title = title;
-            this.contents = contents;
+        ```java
+        // Board.java
+      
+        package io.cloudrium.sample.board.api.infrastructure.data;
+        
+        // imports dependencies...
+        
+        @Entity
+        @Getter
+        @Setter
+        @NoArgsConstructor(access = AccessLevel.PROTECTED)
+        public class Board {
+        
+            @Id
+            @GeneratedValue(strategy = GenerationType.IDENTITY)
+            private Long id;
+        
+            @Column(nullable = false)
+            private String title;
+        
+            @Lob
+            @Column(nullable = false)
+            private String contents;
+        
+            @CreationTimestamp
+            @Column(nullable = false)
+            private LocalDateTime createdAt;
+        
+            @Builder
+            public Board(String title, String contents) {
+                this.title = title;
+                this.contents = contents;
+            }
+        
         }
-    
-    }
-    ```
+        ```

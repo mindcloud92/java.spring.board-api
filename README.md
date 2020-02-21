@@ -9,7 +9,7 @@
 * [Start with Gradle Project](#start-with-gradle-project)
 * [Start with SpringInitializr](#start-with-springInitializr)
 
-* [Apendix. Lombok library](#appendix._lombok_library)
+* [Apendix. Lombok library](#apendix-lombok-library)
   
 <br/>
 
@@ -100,7 +100,7 @@
     }   
     ```
    
-   optional> [apply lombok](#appendix._lombok_library)
+   optional> [apply lombok](#apendix-lombok-library)
           
    
 4) add respository
@@ -174,7 +174,7 @@
     | `Spring Boot` | 2.2.4 | 
     | `Dependencies` | Spring Web, Spring Data JPA, H2 Database (+optional. Lombok) | 
 
-    - lombok을 수동으로 추가하고 싶은경우는 [Appendix. Lombok library](#appendix._lombok_library) 참고        
+    - lombok을 수동으로 추가하고 싶은경우는 [Appendix. Lombok library](#apendix-lombok-library) 참고        
 <br/>
 
 * ref. 이후 과정은 [Start with Gradle Project](#start-with-gradle-project)의 3, 4, 5 참고

@@ -33,7 +33,7 @@
         group '${my group}'
         ```    
     
-3) add application class & main method implementation       
+3) add application class & implement main method        
     ```java
    // Application.java
    

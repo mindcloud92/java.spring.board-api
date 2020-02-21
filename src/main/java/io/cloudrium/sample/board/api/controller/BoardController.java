@@ -17,7 +17,7 @@ public class BoardController {
 
     @GetMapping
     public ResponseEntity search() {
-        return ResponseEntity.ok("test!");
+        return ResponseEntity.ok(repository.findAll());
     }
 
     @GetMapping("/{id}")

@@ -2,12 +2,15 @@
 
 <br/>
 
-> **_Used:_**  JPA(ORM) + Lombok(lib) + H2 DB
+> **_Used:_**  JPA(ORM) + H2 DB
 
 <br/>
 
 * [Start with Gradle Project](#start-with-gradle-project)
 * [Start with SpringInitializr](#start-with-springInitializr)
+<br/>
+
+* [Apendix. Lombok library](#apendix-lombok-library)
   
 <br/>
 
@@ -98,6 +101,9 @@
     }   
     ```
    
+   optional> [apply lombok](#apendix-lombok-library)
+          
+   
 4) add respository
     - add infrastructure.repository package & BoardRepository interface
     ```java
@@ -128,7 +134,7 @@
     
         @GetMapping
         public ResponseEntity search() {
-            return ResponseEntity.ok("test!");
+            return ResponseEntity.ok(repository.findAll());
         }
     
         @GetMapping("/{id}")
@@ -154,8 +160,8 @@
         }
     
     }
-    ```
-
+    ```   
+   
 <br/>
 <br/>
 
@@ -167,8 +173,78 @@
     | `Project`  | Gradle Project |
     | `Language` | Java | 
     | `Spring Boot` | 2.2.4 | 
-    | `Dependencies` | Spring Web, Spring Data JPA, Lombok, H2 Database | 
+    | `Dependencies` | Spring Web, Spring Data JPA, H2 Database (+optional. Lombok) | 
 
+    - lombok을 수동으로 추가하고 싶은경우는 [Appendix. Lombok library](#apendix-lombok-library) 참고        
 <br/>
 
 * ref. 이후 과정은 [Start with Gradle Project](#start-with-gradle-project)의 3, 4, 5 참고
+<br/>
+<br/>
+<br/>
+
+---
+
+#### Apendix. Lombok library
+- boilerplate code를 내부적으로 자동생성해주는 java annotation library
+
+- How to use?
+    1. change build.gradle
+        - define dependency
+        ```gradle
+       // build.gradle
+       
+       dependencies {
+            compileOnly 'org.projectlombok:lombok'
+            annotationProcessor 'org.projectlombok:lombok'
+       }
+       ```
+       
+       - define configuration
+       ```gradle
+       // build.gradle
+       
+       configurations {
+           compileOnly {
+               extendsFrom annotationProcessor
+           }
+       }
+       ```
+       
+    2. change board(entity)
+    ```java
+    // Board.java
+  
+    package io.cloudrium.sample.board.api.infrastructure.data;
+    
+    // imports dependencies...
+    
+    @Entity
+    @Getter
+    @Setter
+    @NoArgsConstructor(access = AccessLevel.PROTECTED)
+    public class Board {
+    
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        private Long id;
+    
+        @Column(nullable = false)
+        private String title;
+    
+        @Lob
+        @Column(nullable = false)
+        private String contents;
+    
+        @CreationTimestamp
+        @Column(nullable = false)
+        private LocalDateTime createdAt;
+    
+        @Builder
+        public Board(String title, String contents) {
+            this.title = title;
+            this.contents = contents;
+        }
+    
+    }
+    ```

@@ -59,25 +59,27 @@
        port: ${my port}
     ```  
    
-4) add controller package & class
-    ```java
-   // BoardController.java
-   
-    package io.cloudrium.sample.board.api.controller;
-    
-    // imports dependencies...
-    
-    @RestController
-    @RequestMapping("/boards")
-    public class BoardController {
-    
-        @GetMapping
-        public ResponseEntity get() {
-            return ResponseEntity.ok("test!");
-        }
-    
-    }
-    ```          
+4) add controller package & class.
+    - write list api  
+  
+      ```java
+      // BoardController.java
+
+      package io.cloudrium.sample.board.api.controller;
+
+      // imports dependencies...
+
+      @RestController
+      @RequestMapping("/boards")
+      public class BoardController {
+
+          @GetMapping
+          public ResponseEntity get() {
+              return ResponseEntity.ok("test!");
+          }
+
+      }
+      ```          
         
 5) Run application
     - call GET /boards api 

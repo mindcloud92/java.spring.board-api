@@ -190,25 +190,21 @@
 
 - How to use?
     1. change build.gradle
-        - define dependency
+        - define dependency & configuration
         ```gradle
        // build.gradle
        
        dependencies {
             compileOnly 'org.projectlombok:lombok'
             annotationProcessor 'org.projectlombok:lombok'
+            ...
        }
-       ```
-       
-       - define configuration
-       ```gradle
-       // build.gradle
        
        configurations {
-           compileOnly {
-               extendsFrom annotationProcessor
-           }
-       }
+          compileOnly {
+              extendsFrom annotationProcessor
+          }
+        }
        ```
        
     2. change board(entity)

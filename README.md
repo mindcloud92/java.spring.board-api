@@ -115,7 +115,7 @@
         }
         ```
    
-5) write CRUD logic to Controller
+5) write CRUD request mapping & implement to Controller
     ```java
     package io.cloudrium.sample.board.api.controller;
     

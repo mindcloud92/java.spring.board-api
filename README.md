@@ -71,7 +71,7 @@
         ```
         
 3) add entity
-    - add infrastructure.data package & Board class
+    - add data package & entity class
         ```java
        // Board.java
        
@@ -104,19 +104,20 @@
    optional> [apply lombok](#apendix-lombok-library)
           
    
-4) add respository
-    - add infrastructure.repository package & BoardRepository interface
-        ```java
-        package io.cloudrium.sample.board.api.infrastructure.repository;
-        
-        // imports dependencies...
-        
-        public interface BoardRepository extends JpaRepository<Board, Long> {
-        }
-        ```
-   
-5) write CRUD request mapping & implement to Controller
+4) add repository package & interface
     ```java
+    package io.cloudrium.sample.board.api.infrastructure.repository;
+    
+    // imports dependencies...
+    
+    public interface BoardRepository extends JpaRepository<Board, Long> {
+    }
+    ```
+   
+5) write CRUD request mapping & implement to controller
+    ```java
+    // BoardController.java
+   
     package io.cloudrium.sample.board.api.controller;
     
     // imports dependencies...
@@ -207,7 +208,7 @@
             }
            ```
        
-    2. change board(entity)
+    2. change entity class
         ```java
         // Board.java
       

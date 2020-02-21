@@ -2,12 +2,14 @@
 
 <br/>
 
-> **_Used:_**  JPA(ORM) + Lombok(lib) + H2 DB
+> **_Used:_**  JPA(ORM) + H2 DB
 
 <br/>
 
 * [Start with Gradle Project](#start-with-gradle-project)
 * [Start with SpringInitializr](#start-with-springInitializr)
+
+* [Apendix. Lombok library](#appendix._lombok_library)
   
 <br/>
 
@@ -98,6 +100,9 @@
     }   
     ```
    
+   optional> [apply lombok](#appendix._lombok_library)
+          
+   
 4) add respository
     - add infrastructure.repository package & BoardRepository interface
     ```java
@@ -154,8 +159,8 @@
         }
     
     }
-    ```
-
+    ```   
+   
 <br/>
 <br/>
 
@@ -167,8 +172,17 @@
     | `Project`  | Gradle Project |
     | `Language` | Java | 
     | `Spring Boot` | 2.2.4 | 
-    | `Dependencies` | Spring Web, Spring Data JPA, Lombok, H2 Database | 
+    | `Dependencies` | Spring Web, Spring Data JPA, H2 Database (+optional. Lombok) | 
 
+    - lombok을 수동으로 추가하고 싶은경우는 [Appendix. Lombok library](#appendix._lombok_library) 참고        
 <br/>
 
 * ref. 이후 과정은 [Start with Gradle Project](#start-with-gradle-project)의 3, 4, 5 참고
+<br/>
+<br/>
+<br/>
+
+---
+
+#### Apendix. Lombok library
+- boilerplate code를 내부적으로 자동생성해주는 java annotation library

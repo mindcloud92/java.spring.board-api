@@ -1,4 +1,4 @@
-# #2. Paging & Sorting
+# #3. Paging & Sorting
 
 1. add `PageRequest` to mapped controller method to search api
 

@@ -1,4 +1,4 @@
-# #0. Rest api with spring boot
+# #1. Rest api with spring boot
 <br/>
 
 * [Start with Gradle Project](#start-with-gradle-project)

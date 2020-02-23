@@ -2,7 +2,7 @@ package io.cloudrium.sample.board.api.controller;
 
 import io.cloudrium.sample.board.api.infrastructure.data.Board;
 import io.cloudrium.sample.board.api.infrastructure.repository.BoardRepository;
-import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,8 +17,8 @@ public class BoardController {
     }
 
     @GetMapping
-    public ResponseEntity search(@RequestParam(required = false) PageRequest request) {
-        return ResponseEntity.ok(repository.findAll());
+    public ResponseEntity search(final Pageable request) {
+        return ResponseEntity.ok(repository.findAll(request));
     }
 
     @GetMapping("/{id}")

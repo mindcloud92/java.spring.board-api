@@ -11,14 +11,12 @@ package io.cloudrium.sample.board.api.controller;
 
 @RestController
 @RequestMapping("/boards")
-public class BoardController {
+public class BoardController {    
 
     @GetMapping
-    public ResponseEntity search(@RequestParam(required = false) PageRequest request) {
-        return ResponseEntity.ok(repository.findAll());
+    public ResponseEntity search(final Pageable request) {
+        return ResponseEntity.ok(repository.findAll(request));
     }
-    
-    // ...
 
 }
 ``` 

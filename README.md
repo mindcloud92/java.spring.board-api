@@ -193,7 +193,7 @@
            
            configurations {
                 compileOnly {
-                  extendsFrom annotationProcessor
+                    extendsFrom annotationProcessor
                 }
             }
            ```

@@ -37,8 +37,6 @@
    
    package io.cloudrium.sample.board.api;
    
-   // imports dependencies...   
-   
    @SpringBootApplication
    public class Application {
    
@@ -64,8 +62,6 @@
       // BoardController.java
 
       package io.cloudrium.sample.board.api.controller;
-
-      // imports dependencies
 
       @RestController
       @RequestMapping("/boards")

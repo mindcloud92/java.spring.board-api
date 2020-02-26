@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class BoardController {
 
     @GetMapping
-    public ResponseEntity get() {
+    public ResponseEntity search() {
         return ResponseEntity.ok("test!");
     }
 

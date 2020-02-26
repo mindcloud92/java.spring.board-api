@@ -17,12 +17,10 @@
         plugins {
             id 'org.springframework.boot' version '2.2.4.RELEASE'
             id 'io.spring.dependency-management' version '1.0.9.RELEASE'
-            // other plugins
         }
         
         dependencies {
             implementation 'org.springframework.boot:spring-boot-starter-web'
-            // other plugins        
         }
         ```  
         

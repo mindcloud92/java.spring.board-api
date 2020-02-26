@@ -12,6 +12,12 @@ package io.cloudrium.sample.board.api.controller;
 @RestController
 @RequestMapping("/boards")
 public class BoardController {    
+    
+    private final BoardRepository repository;
+
+    public BoardController(BoardRepository repository) {
+        this.repository = repository;
+    }
 
     @GetMapping
     public ResponseEntity search(final Pageable request) {

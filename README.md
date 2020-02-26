@@ -7,8 +7,6 @@
 
 package io.cloudrium.sample.board.api.controller;
 
-// imports dependencies...
-
 @RestController
 @RequestMapping("/boards")
 public class BoardController {    

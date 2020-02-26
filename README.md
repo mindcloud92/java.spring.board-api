@@ -25,7 +25,6 @@
         
         dependencies {
             runtimeOnly 'com.h2database:h2'
-            ...
         }
         ```    
         
@@ -55,7 +54,6 @@
             
             dependencies {
                 implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-                ...
             }
             ```
 
@@ -76,8 +74,6 @@
        // Board.java
        
         package io.cloudrium.sample.board.api.infrastructure.data;
-        
-       // imports dependencies...
         
         @Entity
         public class Board {
@@ -108,8 +104,6 @@
     ```java
     package io.cloudrium.sample.board.api.infrastructure.repository;
     
-    // imports dependencies...
-    
     public interface BoardRepository extends JpaRepository<Board, Long> {
     }
     ```
@@ -120,15 +114,12 @@
    
     package io.cloudrium.sample.board.api.controller;
     
-    // imports dependencies...
-    
     @RestController
     @RequestMapping("/boards")
     public class BoardController {
     
         private final BoardRepository repository;
         
-        // DI
         public BoardController(BoardRepository repository) {
             this.repository = repository;
         }
@@ -198,7 +189,6 @@
            dependencies {
                 compileOnly 'org.projectlombok:lombok'
                 annotationProcessor 'org.projectlombok:lombok'
-                ...
            }
            
            configurations {
@@ -213,8 +203,6 @@
         // Board.java
       
         package io.cloudrium.sample.board.api.infrastructure.data;
-        
-        // imports dependencies...
         
         @Entity
         @Getter

@@ -1,4 +1,4 @@
-package io.cloudrium.sample.board.api.infrastructure.data;
+package io.cloudrium.sample.board.api.entity;
 
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;

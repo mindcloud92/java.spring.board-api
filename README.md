@@ -69,11 +69,11 @@
         ```
         
 3) add entity
-    - add data package & entity class
+    - add entity package & class
         ```java
-       // Board.java
+        // Board.java
        
-        package io.cloudrium.sample.board.api.infrastructure.data;
+        package io.cloudrium.sample.board.api.entity;
         
         @Entity
         public class Board {
@@ -102,7 +102,9 @@
    
 4) add repository package & interface
     ```java
-    package io.cloudrium.sample.board.api.infrastructure.repository;
+    // BoardRepository.java
+   
+    package io.cloudrium.sample.board.api.repository;
     
     public interface BoardRepository extends JpaRepository<Board, Long> {
     }
@@ -202,7 +204,7 @@
         ```java
         // Board.java
       
-        package io.cloudrium.sample.board.api.infrastructure.data;
+        package io.cloudrium.sample.board.api.entity;
         
         @Entity
         @Getter

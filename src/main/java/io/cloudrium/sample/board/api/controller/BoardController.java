@@ -1,7 +1,7 @@
 package io.cloudrium.sample.board.api.controller;
 
-import io.cloudrium.sample.board.api.infrastructure.data.Board;
-import io.cloudrium.sample.board.api.infrastructure.repository.BoardRepository;
+import io.cloudrium.sample.board.api.entity.Board;
+import io.cloudrium.sample.board.api.repository.BoardRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

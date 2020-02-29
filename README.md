@@ -29,7 +29,7 @@
     ```java
     // BoardService.java
     
-    package io.cloudrium.sample.board.api.domain.service;
+    package io.cloudrium.sample.board.api.service;
     
     public interface BoardService {
     
@@ -50,7 +50,7 @@
    ```java
    // BoardServiceImpl.java
    
-   package io.cloudrium.sample.board.api.domain.service.impl;
+   package io.cloudrium.sample.board.api.service.impl;
 
    @Service
    public class BoardServiceImpl implements BoardService {

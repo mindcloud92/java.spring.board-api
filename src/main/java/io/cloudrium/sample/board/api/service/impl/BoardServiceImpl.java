@@ -1,8 +1,8 @@
-package io.cloudrium.sample.board.api.domain.service.impl;
+package io.cloudrium.sample.board.api.service.impl;
 
-import io.cloudrium.sample.board.api.domain.service.BoardService;
-import io.cloudrium.sample.board.api.infrastructure.data.Board;
-import io.cloudrium.sample.board.api.infrastructure.repository.BoardRepository;
+import io.cloudrium.sample.board.api.service.BoardService;
+import io.cloudrium.sample.board.api.entity.Board;
+import io.cloudrium.sample.board.api.repository.BoardRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;

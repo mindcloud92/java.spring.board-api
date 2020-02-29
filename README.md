@@ -91,3 +91,49 @@
        }
    }
    ```
+
+4. apply the implemented service to the controller
+    ```java
+    // BoardController.java
+   
+    package io.cloudrium.sample.board.api.controller;
+    
+    @RestController
+    @RequestMapping("/boards")
+    public class BoardController {
+    
+        private final BoardService service;
+    
+        public BoardController(BoardService service) {
+            this.service = service;
+        }
+    
+        @GetMapping
+        public ResponseEntity search(final Pageable request) {
+            return ResponseEntity.ok(service.search(request));
+        }
+    
+        @GetMapping("/{id}")
+        public ResponseEntity get(@PathVariable Long id) {
+            return ResponseEntity.ok(service.get(id));
+        }
+    
+        @PostMapping
+        public ResponseEntity post(@RequestBody Board board) {
+            return ResponseEntity.ok(service.add(board));
+        }
+    
+        @PutMapping("/{id}")
+        public ResponseEntity put(@PathVariable Long id, @RequestBody Board board) {
+            return ResponseEntity.ok(service.change(id, board));
+        }
+    
+        @DeleteMapping("/{id}")
+        public ResponseEntity delete(@PathVariable Long id) {
+            service.remove(id);
+    
+            return ResponseEntity.noContent().build();
+        }
+    
+    }
+    ```

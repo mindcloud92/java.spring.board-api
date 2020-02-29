@@ -17,8 +17,8 @@ public class BoardServiceImpl implements BoardService {
     }
 
     @Override
-    public Page<Board> search(Pageable request) {
-        return repository.findAll(request);
+    public Page<Board> search(Pageable pageable) {
+        return repository.findAll(pageable);
     }
 
     @Override

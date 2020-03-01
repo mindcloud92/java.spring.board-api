@@ -4,9 +4,11 @@ import io.cloudrium.sample.board.api.entity.Board;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 public interface BoardService {
 
-    Page<Board> search(Pageable request);
+    List<Board> search();
 
     Board get(Long id);
 

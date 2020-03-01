@@ -7,6 +7,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class BoardServiceImpl implements BoardService {
 
@@ -17,8 +19,8 @@ public class BoardServiceImpl implements BoardService {
     }
 
     @Override
-    public Page<Board> search(Pageable pageable) {
-        return repository.findAll(pageable);
+    public List<Board> search() {
+        return repository.findAll();
     }
 
     @Override
